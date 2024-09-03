@@ -604,6 +604,10 @@
       <composite n="22" ref="H" />
     </material>
 
-
+    <material name="DefaultMaterial">
+      <D value="7.85" unit="g/cm3"/>
+      <fraction n="0.998" ref="Fe"/>
+      <fraction n=".002"  ref="C"/>
+    </material>
 
   </materials>

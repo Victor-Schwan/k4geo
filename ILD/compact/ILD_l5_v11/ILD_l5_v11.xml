@@ -61,7 +61,8 @@
 
   <include ref="Beampipe_o4_v05.xml"/>
   <include ref="BeamInstrumentation_o3_v02_fitShield.xml"/>
-  <include ref="LumiCal_o3_v02_03.xml"/>
+  <!-- <include ref="LumiCal_o3_v02_03.xml"/> -->
+  <include ref="../../../FCCee/MDI/compact/MDI_o1_v01/LumiCal_o3_v02_05.xml"/>
   <include ref="Vertex_o4_v07_smallBP.xml"/>
   <include ref="InnerTrackerILD_o1_v01_00.xml"/>  
   <include ref="../ILD_common_v02/tpc10_01.xml"/>

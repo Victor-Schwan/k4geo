@@ -56,8 +56,8 @@ materialservice.filename = str(
 
 materialservice.angleDef = angle_def  # eta, theta, cosTheta or thetaRad
 materialservice.angleBinning = 0.05
-materialservice.angleMax = 3.0
-materialservice.angleMin = -3.0
+materialservice.angleMax = 0.2
+materialservice.angleMin = 0
 materialservice.nPhi = 100  # number of bins in phi
 
 ApplicationMgr().ExtSvc += [materialservice]

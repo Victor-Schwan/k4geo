@@ -7,6 +7,7 @@ from pathlib import Path
 
 import ROOT
 
+
 sys.path.append(
     str((Path(__file__).resolve().parent / "../../FCCSW/Examples/scripts").resolve())
 )  # FCC Style from https://github.com/HEP-FCC/FCCSW/blob/master/Examples/scripts/plotstyle.py
@@ -21,13 +22,13 @@ def main():
     )
     parser.add_argument(
         "--angleMin",
-        default=6,
+        default=0,
         type=float,
         help="Minimum eta/theta/cosTheta",
     )
     parser.add_argument(
         "--angleMax",
-        default=6,
+        default=0.2,
         type=float,
         help="Maximum eta/theta/cosTheta",
     )
@@ -104,7 +105,7 @@ def main():
         math.pi,
     )
 
-    for angleBinning, entry in enumerate(tree):
+    for angleBinning, entry in enumerate(tree):  # angleBinning is unused: remove?
         nMat = entry.nMaterials
 
         entry_x0, entry_lambda, entry_depth = 0.0, 0.0, 0.0

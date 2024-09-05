@@ -247,3 +247,9 @@ test/k4FWCoreTest/**/*.root
 test/inputFiles/*.slcio
 test/gaudi_opts/testConverterConstants.py
 
+#########################################################
+# Custom
+#########################################################
+
+utils/data/**
+FCCee/MDI/compact/MDI_o1_v01/stl_files/*

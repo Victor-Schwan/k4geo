@@ -66,8 +66,9 @@
        hack needed for the CAD modeled beampipe  -->
   <world material="Vacuum"/>
 
-  <!-- Include the MDI Collection for (CAD-based) Option 1 Version 01 (MDI_o1_CADBased_v01) -->
-  <include ref="../../../MDI/compact/MDI_o1_CADBased_v01/MDI_o1_CADBased_v01_collection.xml"/>
+  <!-- Include the MDI Collection for (Shape-based) Option 1 Version 01 (MDI_o1_ShapeBased_v01) -->
+  <include ref="../../../MDI/compact/MDI_o1_ShapeBased_v01/MDI_Dimensions_Materials_o1_v01.xml"/>
+  <include ref="../../../MDI/compact/MDI_o1_ShapeBased_v01/MDI_o1_ShapeBased_v01_collection.xml"/>
 
   <!-- vertex, innerTracker and lumiCal from CLD_02_v07 -->
   <include ref="../../../CLD/compact/CLD_o2_v07/LumiCal_o3_v02_05.xml"/>

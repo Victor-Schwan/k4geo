@@ -22,13 +22,13 @@
 	<fraction n="0.084" ref="Ti"/>
 	<fraction n="0.084" ref="Nb"/>
       </material>
-      
+
       <material name="AlBeMet162">
 	<D value="2.1" unit="g/cm3"/>
 	<fraction n="0.38" ref="Al"/>
 	<fraction n="0.62" ref="Be"/>
       </material>
-      
+
       <material name="LiquidNDecane">
 	<D value="0.73" unit="g/cm3"/>
 	<composite n="10" ref="C" />
@@ -40,7 +40,7 @@
 	<composite n="2" ref="H" />
 	<composite n="1" ref="O" />
       </material>
-      
+
       <!-- for LumiCal -->
       <material name="TungstenDens24">
 	<D value="17.8" unit="g/cm3"/>
@@ -55,7 +55,7 @@
 	<fraction n="0.334" ref="C"/>
 	<fraction n="0.666" ref="H"/>
       </material>
-      
+
       <material name="FFQMaterial">
 	<D type="density" value="3.367" unit="g/cm3"/>
 	<fraction n="0.654058214" ref="Al"/>
@@ -72,10 +72,10 @@
 	<fraction n="0.998" ref="Fe"/>
 	<fraction n=".002"  ref="C"/>
       </material>
-      
+
     </materials>
 
-    
+
     <define>
         <constant name="CrossingAngle" value="0.030*rad"/>
         <constant name="SolenoidField" value="2*tesla"/>
@@ -119,14 +119,14 @@
         <constant name="LumiCal_min_z_prime" value="1074*mm"/>
         <constant name="LumiCal_dz_prime" value="0.5 * 25 * 4.5 * mm"/> <!-- Must be consistent with layers defined in the lumiCal xml, half-length-->
 	<constant name="LumiCal_max_z_prime" value="LumiCal_min_z_prime + LumiCal_dz_prime * 2" />
-	
+
         <!-- calculate the Z position in the detector reference frame for consistency with existing drivers -->
         <constant name="LumiCal_min_z" value="LumiCal_min_z_prime*cos(0.5*CrossingAngle)"/>
 	<constant name="LumiCal_max_z" value="LumiCal_max_z_prime*cos(0.5*CrossingAngle)" />
-	
+
         <!-- This has nothing to do with the actual length of the LumiCal, the value is only used for the positioning -->
         <constant name="LumiCal_dz" value="LumiCal_dz_prime * cos(0.5 * CrossingAngle)"/>
-        
+
         <constant name="LumiCal_inner_radius" value="55.0*mm"/>
         <constant name="LumiCal_outer_radius" value="115.0*mm- env_safety"/>
 
@@ -147,7 +147,7 @@
         <!-- For convenience, z here refers to dimensions *along the beam pipe*, which is tilted by CrossingAngle/2 w.r.t the global z axis -->
 	<constant name="LumiCal_shield_dz_prime" value="3.5/2.0*mm"/> <!-- Must be consistent with layers defined in the lumiCal xml (1*3.5 mm)-->
         <constant name="LumiCal_shield_dz" value="LumiCal_shield_dz_prime  * cos(0.5 * CrossingAngle)"/>
-	
+
     </define>
 
 </lccdd>
